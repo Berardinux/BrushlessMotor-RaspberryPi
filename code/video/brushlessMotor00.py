@@ -1,10 +1,8 @@
 from gpiozero import PWMOutputDevice
 import time
 
-# Pin definitions
-PIN = 26  # GPIO 26 corresponds to physical pin 37
+PIN = 26
 
-# Initialize PWM device with 50Hz frequency
 motor = PWMOutputDevice(PIN, frequency=50)
 
 print("Full throttle")
@@ -19,7 +17,6 @@ print("Half Speed")
 motor.value = .075
 time.sleep(4)
 
+motor.value = 0
 
-
-motor.value = 0  # Stop PWM
 print("GPIO cleaned up.")

@@ -13,13 +13,13 @@ def set_motor_speed(duty_cycle):
     print(f"Set motor speed to {duty_cycle}%")
 
 try:
-    for i in range(100, 60, -1):
+    for i in range(100, 50, -1):
         set_motor_speed(i)
-        time.sleep(.5)
+        time.sleep(.2)
 
-    for i in range (60, 100, +1):
+    for i in range (50, 100, +1):
         set_motor_speed(i)
-        time.sleep(.5)
+        time.sleep(.2)
     
     set_motor_speed(100)
     time.sleep(5)

@@ -29,7 +29,7 @@ try:
     print("ESC armed and ready to control the motor.")
 
     # Now you can set the motor speed
-    set_motor_speed(7.5)  # Adjust this value to control speed (7.5% is typically mid-point)
+    set_motor_speed(9)  # Adjust this value to control speed (7.5% is typically mid-point)
     time.sleep(4)  # Run for 4 seconds
     print("Motor running at 75% speed for 4 seconds")
 
